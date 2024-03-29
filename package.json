@@ -1,0 +1,18 @@
+{
+  "name": "bootcamp-blog",
+  "version": "1.0.0",
+  "description": "Projeto de um Blog com CRUD",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Fabretti",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0"
+  }
+}
