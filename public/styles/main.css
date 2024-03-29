@@ -3,12 +3,10 @@
   padding: 0;
   margin: 0;
   border: 0;
-  /* alterar a fonte depois para a 'montserrat'*/
   font-family: 'Montserrat';
 }
 
 html{
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,10 +45,15 @@ header {
   text-decoration: none;
   font-weight: normal;
 }
+#header-menus li a:hover {
+  font-weight: 500;
+}
+#header-menus li {
+  font-size: 16px;
+}
 
 /* -- FOOTER --------------------------------- */
 footer {
-  position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -59,6 +62,7 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: white;
+  margin-top: 60px;
 }
 footer div p a {
   color: white;
@@ -133,7 +137,7 @@ main h1 {
   padding: 23px 20px 23px 20px;
   border-radius: 0px 0px 5px 5px;
   width:calc(38vw - 40px);
-  top: 288px;
+  top: 284px;
 }
 #bloco-titulo-3 {
   position: absolute;
@@ -145,7 +149,7 @@ main h1 {
   padding: 23px 20px 23px 20px;
   border-radius: 0px 0px 5px 5px;
   width:calc(38vw - 40px);
-  top: 476.2px;
+  top: 472px;
 }
 
 #recentes-container a {
@@ -170,4 +174,36 @@ main h1 {
 #titulo-botao {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.blog-article {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.blog-article p {
+  padding-left: 10px;
+}
+#titulo-botao button {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  color: white;
+  transition: ease-in-out 300ms;
+}
+#titulo-botao button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: ease-in-out 300ms;
+}
+
+.icones {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
 }
