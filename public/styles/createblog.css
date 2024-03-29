@@ -1,0 +1,44 @@
+/* id ou class => "cb-...-..." */
+
+#cb-todos-inputs{
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-radius: 0px 0px 5px 5px;
+  padding: 30px;
+}
+
+#cb-inputs-cima{
+  display: flex;
+  gap: 50px;
+}
+
+#cb-inputs-cima input{
+  padding: 3px;
+}
+#ititulo{
+  width: 15vw;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+#iimgURL{
+  width: 40vw;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+#cb-input-baixo{
+  margin-top: 15px;
+  display: flex;
+  gap: 7px;
+}
+#itexto{
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+}
+

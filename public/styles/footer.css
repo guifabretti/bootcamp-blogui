@@ -1,0 +1,20 @@
+/* -- FOOTER --------------------------------- */
+footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: saturate(180%) blur(20px);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  margin-top: 60px;
+}
+footer div p a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+footer div p a:hover {
+  text-decoration: underline;
+}

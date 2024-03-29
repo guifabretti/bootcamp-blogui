@@ -1,0 +1,14 @@
+/* -- RESET CSS ------------------------------ */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Montserrat';
+}
+
+html{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/images/sky-background.jpg");
+}
