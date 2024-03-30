@@ -27,11 +27,44 @@ class BlogRepository{
     ));
   }
 
+  findByTitulo(titulo){
+    return new Promise((resolve) => resolve(
+      blogs.find((blog) => blog.titulo === titulo)
+    ));
+  }
 
   delete(id){
     return new Promise((resolve) => {
       blogs = blogs.filter((blog) => blog.id !== id)
       resolve()
+    });
+  }
+  
+  create({ titulo, texto, imgURL }){
+    return new Promise((resolve) => {
+      const newBlog = {
+        id: uuidv4(),
+        titulo,
+        texto,
+        imgURL,
+      }
+      blogs.push(newBlog)
+      resolve(newBlog)
+    });
+  }
+
+  update(id, { titulo, texto, imgURL }){
+    return new Promise((resolve) => {
+      const updatedBlog = {
+        id,
+        titulo,
+        texto,
+        imgURL,
+      }
+      blogs = blogs.map((blog) => (
+        blog.id === id ? updatedBlog : blog
+      ))
+      resolve(updatedBlog)
     });
   }
 }
