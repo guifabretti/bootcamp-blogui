@@ -14,9 +14,10 @@ app.use(express.json());
 app.get("/blog", BlogController.index)
 app.get("/blog/:id", BlogController.show)
 app.delete("/blog/:id", BlogController.delete)
-app.post("/blog", BlogController.store)
+app.get("/createblog", BlogController.before_store)
+app.post("/createblog/submit", BlogController.store)
 app.put("/blog/:id", BlogController.update)
 
 app.listen(port, () => {
-  console.log(`🔥 Server started at http://localhost:${port}`);
+  console.log(`🔥 Server started at http://localhost:${port}/blog`);
 });

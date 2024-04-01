@@ -9,21 +9,37 @@
 
 #cb-inputs-cima{
   display: flex;
+  align-items: center;
   gap: 50px;
 }
 
 #cb-inputs-cima input{
   padding: 3px;
 }
+
+#cb-inputs-cima button {
+  padding: 10px 30px 10px 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  color: white;
+  transition: ease-in-out 300ms;
+  text-decoration: none;
+}
+#cb-inputs-cima button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: ease-in-out 300ms;
+}
+
 #ititulo{
-  width: 15vw;
+  width: 20vw;
   background: none;
   border: 1px solid white;
   color: white;
   border-radius: 5px;
 }
 #iimgURL{
-  width: 40vw;
+  width: 26vw;
   background: none;
   border: 1px solid white;
   color: white;
@@ -41,4 +57,5 @@
   color: white;
   padding: 5px;
 }
+
 

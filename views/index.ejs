@@ -41,32 +41,25 @@
           <p>Adicionar +</p>
         </a>
       </section>
-      <div id="todos-blogs-articles">
-        <article class="blog-article">
-          <p>Inteligencia Artificial e seus malefícios</p>
-          <div class="icones">
-            <a href=""><img src="/images/icon-eye.png"></a>
-            <a href=""><img src="/images/icon-edit.png"></a>
-            <a href=""><img src="/images/icon-delete.png"></a>
-          </div>
-        </article>
-        <article class="blog-article">
-          <p>Inteligencia Artificial e seus malefícios</p>
-          <div class="icones">
-            <a href=""><img src="/images/icon-eye.png"></a>
-            <a href=""><img src="/images/icon-edit.png"></a>
-            <a href=""><img src="/images/icon-delete.png"></a>
-          </div>
-        </article>
-        <article class="blog-article">
-          <p>Inteligencia Artificial e seus malefícios</p>
-          <div class="icones">
-            <a href=""><img src="/images/icon-eye.png"></a>
-            <a href=""><img src="/images/icon-edit.png"></a>
-            <a href=""><img src="/images/icon-delete.png"></a>
-          </div>
-        </article>
-      </div>
+
+
+
+      <% blogs.forEach((blog) => { %>
+        <div id="todos-blogs-articles">
+          <article class="blog-article">
+            <p><%= blog.titulo %></p>
+            <div class="icones">
+              <a href=""><img src="/images/icon-eye.png"></a>
+              <a href=""><img src="/images/icon-edit.png"></a>
+              <a href=""><img src="/images/icon-delete.png"></a>
+            </div>
+          </article>
+        </div>
+      <% }) %>
+
+
+
+
     </section>
   </main>
 <%- include("partials/footer.ejs") %>

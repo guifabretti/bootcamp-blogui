@@ -2,9 +2,9 @@ import BlogRepository from "../repositories/BlogRepository.js";
 
 class BlogController{
   async index(req, res) {
-    res.render("index.ejs");
-    // const blogs = await BlogRepository.findAll(); // transformando em código assincrono
-    // res.json(blogs);
+    const blogs = await BlogRepository.findAll();
+    res.render("index.ejs", { blogs });
+    //res.json(blogs);
   }
 
   async show(req, res) {
@@ -17,24 +17,28 @@ class BlogController{
     }
     res.json(blog)
   }
-
+  
+  before_store(req, res) {
+    res.render("createblog.ejs");
+  }
   async store(req, res) {
     const { titulo, texto, imgURL } = req.body;
     
     if (!titulo || !texto || !imgURL) {
       return res.status(400).json({ error: 'Há algo faltando...' }) //da para fazer separado mas to com preguiça kkk
     }
-
+    
     //verifica se existe um titulo ja cadastrado
     const tituloExists = await BlogRepository.findByTitulo(titulo)
-
+    
     if (tituloExists) {
       return res.status(400).json({ error: 'Este título ja existe' })
     }
     const blog = await BlogRepository.create({
       titulo, texto, imgURL,
-    })
-    res.json(blog)
+    });
+    //res.json(blog)
+    res.render("createblog.ejs");
   }
 
   async update(req, res) {
