@@ -73,7 +73,7 @@ class BlogController{
 
     await BlogRepository.delete(id);
     // 204 = No content
-    res.sendStatus(204)
+    // res.sendStatus(204)
   }
 }
 

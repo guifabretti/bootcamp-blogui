@@ -42,23 +42,22 @@
         </a>
       </section>
 
-
-
       <% blogs.forEach((blog) => { %>
         <div id="todos-blogs-articles">
           <article class="blog-article">
             <p><%= blog.titulo %></p>
-            <div class="icones">
-              <a href=""><img src="/images/icon-eye.png"></a>
-              <a href=""><img src="/images/icon-edit.png"></a>
-              <a href=""><img src="/images/icon-delete.png"></a>
+            <div class="icones"> 
+              <a href="/blog/<%= blog.id %>"><img src="/images/icon-eye.png"></a>
+              
+              <a href="/blog/edit/<%= blog.id %>"><img src="/images/icon-edit.png"></a>
+
+              <a href="#" class="delete-blog-btn" data-id="<%= blog.id %>">
+                <img src="/images/icon-delete.png">
+            </a>
             </div>
           </article>
         </div>
       <% }) %>
-
-
-
 
     </section>
   </main>
