@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+  <div class="background-image"></div>
+  <main>
+    <h1>Escreva seu Blog:</h1>
+    <form action="/createblog/submit" method="POST">
+      <%blog.forEach((item) => { %>
+        <section id="cb-todos-inputs">
+          <section id="cb-inputs-cima">
+            <div>
+              <label for="ititulo">Título: </label>
+              <input type="text" value=`<%= item.titulo %>` name="titulo" id="ititulo">
+            </div>
+            <div>
+              <label for="iimgURL">URL da Imagem: </label>
+              <input type="text" value=`<%= item.imgURL %>` name="imgURL" id="iimgURL">
+            </div>
+            <button type="submit">Criar +</button>
+          </section>
+          <section id="cb-input-baixo">
+            <label for="itexto">Texto: </label>
+            <textarea name="texto" id="itexto" cols="145" rows="30"><%= item.texto %></textarea>
+          </section>
+        </section>
+      <% }) %>
+    </form>
+  </main>
+<%- include("partials/footer.ejs") %>

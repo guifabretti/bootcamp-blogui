@@ -15,7 +15,8 @@ class BlogController{
       //404 = Not Found
       return res.status(404).json({ error: 'Blog not found' })
     }
-    res.json(blog)
+    // res.json(blog)
+    res.render("viewblog.ejs", { blog: [blog] });
   }
   
   before_store(req, res) {
@@ -60,7 +61,8 @@ class BlogController{
     }
 
     const blog = await BlogRepository.update(id, { titulo, texto, imgURL })
-    res.json(blog)
+    // res.json(blog)
+    res.render("editblog.ejs", { blog: [blog] })
   }
 
   async delete(req, res) {

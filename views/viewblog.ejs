@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+  <div class="background-image"></div>
+  <main>
+    <%blog.forEach((item) => { %>
+      <h1 class="vb-titulo"><%= item.titulo %></h1>
+      <section class="vb-container">
+        
+        <div class="vb-div-txt">
+          <p class="vb-txt">
+            <%= item.texto %>
+          </p>
+        </div>
+        
+        <div class="vb-div-img">
+          <img class="vb-img" src="<%= item.imgURL %>" alt="Imagem Blog">
+        </div>
+  
+      </section>
+    <% }) %>
+  </main>
+<%- include("partials/footer.ejs") %>

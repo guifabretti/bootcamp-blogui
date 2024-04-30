@@ -1,0 +1,32 @@
+.vb-titulo {
+  text-align: center;
+}
+
+.vb-container {
+  margin: auto;
+}
+
+.vb-div-img{
+  margin: auto;
+  margin-top: 20px;
+  width: 600px;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vb-img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+.vb-div-txt{
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: saturate(180%) blur(20px);
+  padding: 30px;
+}
+.vb-txt{
+  font-size: 18px;
+}
