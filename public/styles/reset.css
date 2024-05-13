@@ -5,3 +5,12 @@
   border: 0;
   font-family: 'Montserrat';
 }
+
+::-webkit-scrollbar{
+  width: 8px;
+  background-color: #1c1c1c;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #270f48;
+}

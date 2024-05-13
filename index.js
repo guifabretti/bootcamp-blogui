@@ -2,7 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import bodyParser from "body-parser";
 import BlogController from "./controllers/BlogController.js";
-import methodOverride from 'method-override';
+import methodOverride from 'method-override'; 
 
 const app = express();
 const port = 3000;

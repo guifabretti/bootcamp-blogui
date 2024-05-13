@@ -149,3 +149,7 @@ main h1 {
   flex-direction: row;
   gap: 13px;
 }
+
+.edit-blog-btn {
+  cursor: pointer;
+}
