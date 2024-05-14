@@ -38,4 +38,4 @@ https://guifabretti.github.io/bootcamp-blogui
 
 ## Preview
 
-video
+https://github.com/guifabretti/bootcamp-blogui/assets/72526178/ea99907d-0c16-444f-a552-7721a9d591a4
